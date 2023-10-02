@@ -8,6 +8,16 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
+      <li>
+        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/About">
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/Products">
+          Products
+        </NavLink>
+      </li>
     </ul>
   );
 };
